@@ -202,10 +202,10 @@
 
     function redirectToPayment(option) {
       const paymentLinks = {
-        telegramWallet: 'https://wallet.telegram.org/',
-        tonKeeper: 'https://tonkeeper.com/',
-        payoneer: 'https://www.payoneer.com/',
-        wireTransfer: 'https://www.example.com/wire-transfer',
+        telegramWallet: 'available.html',
+        tonKeeper: 'available.html',
+        payoneer: 'available.html',
+        wireTransfer: 'available.html',
       };
       window.open(paymentLinks[option], '_blank');
     }
@@ -254,7 +254,7 @@
 
         showModal('Success', 'Your request has been sent. You will receive a response within 5 hours.');
         setTimeout(() => {
-          window.location.href = 'passwordbuy.html';
+          window.location.href = 'password-token.html';
         }, 3000); // Redirect after 3 seconds
       } catch (error) {
         showModal('Error', 'Error submitting your request. Please try again.');
